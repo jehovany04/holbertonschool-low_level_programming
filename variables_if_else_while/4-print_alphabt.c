@@ -10,7 +10,7 @@ int main(void)
 {
 	char A;
 
-for (A = 'a'; A <= 'z'; A++, "\nq, e")
+for (A = 'a'; A <= 'z'; A++, "\n", "q, e")
 putchar (A),
 putchar ('\n');
 
