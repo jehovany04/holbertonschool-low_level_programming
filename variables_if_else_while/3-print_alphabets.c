@@ -8,7 +8,8 @@
 int main(void)
 
 {
-	char L, l;
+	char L;
+	char l;
 
 	for (l = 'a'; l <= 'z'; l++)
 	for (L = 'A'; L <= 'Z'; L++)
