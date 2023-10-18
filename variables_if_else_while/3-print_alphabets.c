@@ -13,7 +13,8 @@ int main(void)
 
 	for (l = 'a'; l <= 'z'; l++)
 	for (L = 'A'; L <= 'Z'; L++)
-putchar (L), (l);
+putchar (L),
+putchar (l),
 putchar ('\n');
 
 return (0);
