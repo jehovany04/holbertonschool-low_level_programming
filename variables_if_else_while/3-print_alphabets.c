@@ -10,8 +10,8 @@ int main(void)
 {
 	char L, l;
 
-	for (L = 'A'; L <= 'Z'; L++)
 	for (l = 'a'; l <= 'z'; l++)
+	for (L = 'A'; L <= 'Z'; L++)
 
 putchar (L);
 putchar (l);
