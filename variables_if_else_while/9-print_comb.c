@@ -15,7 +15,6 @@ for ((CH = 0); CH <= 9; CH++)
 
 	if (digit < 9)
 	putchar(',');
-	putchar(' ');
 putchar(CH);
 putchar('\n');
 
