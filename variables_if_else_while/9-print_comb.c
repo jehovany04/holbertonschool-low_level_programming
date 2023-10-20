@@ -9,11 +9,10 @@
 int main(void)
 {
 	int CH;
-	int digit;
 
 for ((CH = 0); CH <= 9; CH++)
 
-	if (digit < 9)
+	if (CH < 9)
 	putchar(',');
 putchar(CH);
 putchar('\n');
