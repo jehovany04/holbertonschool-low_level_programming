@@ -10,7 +10,7 @@ int main(void)
 {
 	int CH;
 
-for ((CH = 0); CH <= 9; CH++)
+for (CH = 0; CH <= 9; CH++)
 
 	if (CH < 9)
 	putchar(',');
