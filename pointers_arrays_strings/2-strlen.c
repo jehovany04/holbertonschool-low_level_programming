@@ -9,13 +9,11 @@
 */
 int _strlen(char *s)
 {
-int length = 0;
+int l = 0;
 
-for (; s[length] != '\0'; length++)
-
-// Loop through the string until the null terminator is encountered.
-
-}
-
-return length;
+	while ( s[l] != '\0')
+	{
+		l++;
+	}
+	return l;
 }
