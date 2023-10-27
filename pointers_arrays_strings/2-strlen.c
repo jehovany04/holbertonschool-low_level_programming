@@ -2,16 +2,20 @@
 #include <stdio.h>
 
 /**
- * _strlen - Returns the length of a string
- * @s: A pointer to the string
- * Return: The length of the string
- */
+* _strlen - returns the length of a string
+* @s: the input string
+*
+* Return: The length of the string (number of characters).
+*/
 int _strlen(char *s)
 {
+int length = 0;
 
-int longueur = 0;
+for (; s[length] != '\0'; length++)
 
-for (longueur = 0; s[longueur] != '\0'; longueur++)
+// Loop through the string until the null terminator is encountered.
 
-return longueur;
+}
+
+return length;
 }
