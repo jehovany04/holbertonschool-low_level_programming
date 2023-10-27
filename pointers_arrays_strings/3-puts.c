@@ -11,9 +11,9 @@ void _puts(char *str)
 
 	while (str[i] != '\0')
 {
-	putchar(str[i]); // imprime le caractère .
+	putchar(str[i]);
 	i++;
 }
 
-	putchar('\n'); // imprime une nouvelle ligne à la fin .
+	putchar('\n');
 }
