@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -7,12 +6,13 @@
 */
 void _puts(char *str)
 {
-	for (int i = 0; str[i] != '\0'; i++)
+	int i = 0;
 
+	while (str[i] != '\0')
 {
-putchar(str[i]);
+	putchar(str[i]); // imprime le caractère .
+	i++;
 }
 
-putchar('\n');
-
+	putchar('\n'); // imprime une nouvelle ligne à la fin .
 }
