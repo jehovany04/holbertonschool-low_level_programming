@@ -3,9 +3,9 @@
 #include <string.h>
 
 /**
-* void rev_string(char *s) - reverses the string  
+* void rev_string(char *s) - reverses the string
 *@s : read the string
-* Return: nothing 
+* Return: nothing
 */
 void rev_string(char *s)
 {
