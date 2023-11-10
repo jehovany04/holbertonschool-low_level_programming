@@ -4,7 +4,7 @@
 /**
 * create_array -Crée array caractères et initialise avec caractère dedié.
 * @size: La taille du tableau.
-* @c: Le caractère avec lequel initialiser le tableau.
+* @c: Le caractère avec lequel initialiser tableau.
 *
 * Retourne: NULL si size = 0,si allocation memory fail,sinon pointeur to array.
 */
@@ -17,14 +17,14 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	/* Alloue de la mémoire pour le tableau */
+	/* Alloue de mémoire pour tableau */
 	array = malloc(sizeof(char) * size);
 
 	/* Vérifie si l'allocation de mémoire échoue */
 	if (array == NULL)
 		return (NULL);
 
-	/* Initialise le tableau avec le caractère spécifié */
+	/* Initialise tableau avec caractère donné */
 	i = 0;
 	while (i < size)
 	{
@@ -32,7 +32,7 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 
-	/* Retourne un pointeur vers le tableau créé */
+	/* Retourne pointeur vers tableau créé */
 
 	return (array);
 }
