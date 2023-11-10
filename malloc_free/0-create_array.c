@@ -1,37 +1,34 @@
 #include <stdlib.h>
 
 /**
-* create_array - Crée array de caractère initialisé avec caract spécifique.
+* create_array -Crée array caractères et initialise avec caractère dedié.
 * @size: La taille du tableau.
-* @c:Le caractère pour initialiser le tableau.
+* @c: Le caractère avec lequel initialiser le tableau.
 *
-* Retour:if size = 0,show NULL.Sinon,a pointeur vers array ou NULL si échec.
+* Retourne: NULL si size = 0,si allocation memory fail,sinon pointeur to array.
 */
-
 char *create_array(unsigned int size, char c)
 {
-	char *arr; /**Déclaration en dehors de la boucle**/
+	char *array;
+	unsigned int i;
 
+	/* Vérifie si size est égal à 0 */
 	if (size == 0)
-{
-	return (NULL); /**Retourne NULL si la taille est 0**/
-}
+		return (NULL);
 
-	arr = (char *)malloc(size * sizeof(char)); /**Alloue de la mémoire**/
+	/* Alloue de la mémoire pour le tableau */
+	array = malloc(size * sizeof(char));
 
-	if (arr == NULL)
-{
-	return (NULL); /**Retourne NULL si l'allocation a échoué**/
-}
+	/* Vérifie si l'allocation de mémoire échoue */
+	if (array == NULL)
+		return (NULL);
 
-{
-	unsigned int i; /**Déclaration à l'intérieur d'un bloc**/
+	/* Initialise le tableau avec le caractère spécifié */
 	for (i = 0; i < size; i++)
-{
-	arr[i] = c; /**Initialise each élément d'array avec caractère spécifié**/
-}
-}
+	{
+		array[i] = c;
+	}
 
-	return (arr); /**Retourne le pointeur vers le tableau**/
+	/* Retourne un pointeur vers le tableau créé */
+	return (array);
 }
-
