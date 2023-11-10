@@ -30,5 +30,6 @@ char *create_array(unsigned int size, char c)
 	}
 
 	/* Retourne un pointeur vers le tableau créé */
+
 	return (array);
 }
