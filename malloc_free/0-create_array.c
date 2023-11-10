@@ -1,5 +1,6 @@
 #include <stdlib.h>
 
+
 /**
 * create_array -Crée array caractères et initialise avec caractère dedié.
 * @size: La taille du tableau.
@@ -24,9 +25,11 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	/* Initialise le tableau avec le caractère spécifié */
-	for (i = 0; i < size; i++)
+	i = 0;
+	while (i < size)
 	{
 		array[i] = c;
+		i++;
 	}
 
 	/* Retourne un pointeur vers le tableau créé */
