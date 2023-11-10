@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	/* Alloue de la mémoire pour le tableau */
-	array = malloc(size * sizeof(char));
+	array = malloc(sizeof(char) * size);
 
 	/* Vérifie si l'allocation de mémoire échoue */
 	if (array == NULL)
