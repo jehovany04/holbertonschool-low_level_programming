@@ -1,7 +1,7 @@
 #include <stddef.h>
 
 /**
-* array_iterator - Applique une fonction donnée à chaque élément d'un tableau.
+* array_iterator - Applique une fonction donnée à each élément d'un array.
 * @array: Le tableau à parcourir.
 * @size: La taille du tableau.
 * @action: Un pointeur vers la fonction à appliquer à chaque élément.
