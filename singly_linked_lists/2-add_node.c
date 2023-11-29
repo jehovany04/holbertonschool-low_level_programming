@@ -3,18 +3,18 @@
 #include <string.h>
 
 /**
-* add_node - Ajoute un nouveau nœud au début d'une liste de type list_t.
-* @head: Un pointeur vers un pointeur vers le début de la liste.
-* @str: La chaîne à dupliquer et à ajouter au nouveau nœud.
-*
-* Return: L'adresse du nouvel élément, ou NULL en cas d'échec.
-*/
+ * add_node - Ajoute un nouveau nœud au début d'une liste de type list_t.
+ * @head: Un pointeur vers un pointeur vers le début de la liste.
+ * @str: La chaîne à dupliquer et à ajouter au nouveau nœud.
+ *
+ * Return: L'adresse du nouvel élément, ou NULL en cas d'échec.
+ */
 list_t *add_node(list_t **head, const char *str)
 {
+	list_t *new_node;
+
 	if (head == NULL || str == NULL)
 		return (NULL);  /** Vérifier les paramètres d'entrée **/
-
-	list_t *new_node;
 
 	new_node = malloc(sizeof(list_t));
 
