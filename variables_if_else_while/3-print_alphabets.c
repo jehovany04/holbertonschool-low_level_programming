@@ -1,21 +1,24 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
+
 /**
-* main - Print if is positive or negative
-*
-* Return: 0 Always (succès)
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
 */
 int main(void)
 {
-	char l;
 
-	for (l = 'a'; l <= 'z'; l++)
-		putchar(l);
+char lettre;
 
-	for (l = 'A'; l <= 'Z'; l++)
-putchar (l);
-putchar ('\n');
-
+for (lettre = 'a'; lettre <= 'z'; lettre++)
+{
+putchar(lettre);
+};
+for (lettre = 'A'; lettre <= 'Z'; lettre++)
+{
+putchar(lettre);
+};
+putchar('\n');
 return (0);
 }
