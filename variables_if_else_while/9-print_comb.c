@@ -1,22 +1,23 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/**
-*main
-*Return: 0 Always (succès)
-*/
 
+/**
+  * main - Entry point
+  *
+  * Return: Always 0 (Success)
+*/
 int main(void)
 {
-	int CH;
-
-for (CH = 0; CH <= 9; CH++)
-
-	if (CH < 9)
-	putchar(',');
-putchar(CH);
+int num;
+for (num = 0; num <= 9; num++)
+{
+putchar('0' + num);
+if (num < 9)
+{
+putchar(',');
+putchar(' ');
+};
+};
 putchar('\n');
-
 return (0);
-
 }
