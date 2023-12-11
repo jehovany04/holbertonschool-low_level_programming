@@ -1,19 +1,18 @@
 #include "main.h"
-
-/* Function prototype */
-void puts2(char *str);
+#include <stdio.h>
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-char *str;
+    char str[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\nhello world! hello-world 0123456hello world\thello world.hello world\n";
+    char *ptr;
 
-str = "0123456789";
-/* Correct function call for puts2 */
-puts2(str);
-return (0);
+    ptr = cap_string(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
