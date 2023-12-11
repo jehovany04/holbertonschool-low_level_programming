@@ -1,17 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
-void _puts(char *);
-
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
-*/
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-char *str;
+    char *s = "hello, world";
+    char *f = "oleh";
+    unsigned int n;
 
-str = "Holberton!";
-_puts(str);
-return (0);
+    n = _strspn(s, f);
+    printf("%u\n", n);
+    return (0);
 }
