@@ -1,22 +1,22 @@
-#include <stdio.h>
+#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
-* array_iterator - Exécute une fonction sur chaque élément d'un tableau.
-* @array: Le tableau d'entiers.
-* @size: La taille du tableau.
-* @action: Un pointeur de fonction pour l'action à effectuer.
-*
-* Retour: Rien.
-*/
-void array_iterator(int *array, size_t size, void (*action)(int))
+ * array_iterator - function
+ * @array: int ptr
+ * @size: size_t
+ * @action: void function ptr
+ */
+void	array_iterator(int *array, size_t size, void (*action)(int))
 {
-	if (array == NULL || action == NULL)
+	size_t	x;
+
+	if (array == 0)
 		return;
-
-	size_t i = 0;  /** Déclarer i en dehors de la boucle**/
-
-	for (; i < size; i++)
-	{
-		action(array[i]);
-	}
+	if (size == 0)
+		return;
+	if (action == 0)
+		return;
+	for (x = 0; x < size; x++)
+		action(array[x]);
 }
