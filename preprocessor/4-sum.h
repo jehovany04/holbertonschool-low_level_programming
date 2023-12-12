@@ -1,6 +1,6 @@
-#ifndef SUM_H
-#define SUM_H
+#ifndef EX_H
+# define EX_H
 
-#define SUM(x, y) ((x) + (y))
+# define SUM(X, Y) ((X) + (Y))
 
-#endif /* SUM_H */
+#endif
